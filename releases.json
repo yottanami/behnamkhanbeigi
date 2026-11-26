@@ -1,0 +1,34 @@
+[
+  {
+    "trackId": 6769398385,
+    "title": "Bittersweet",
+    "releaseDate": "2026-05-15",
+    "songLink": "https://song.link/i/6769398385",
+    "appleUrl": "https://music.apple.com/us/album/bittersweet/6769398381?i=6769398385&uo=4",
+    "artwork": "images/artwork/6769398385.jpg"
+  },
+  {
+    "trackId": 1885296220,
+    "title": "Shadowed by Tomorrow",
+    "releaseDate": "2026-03-20",
+    "songLink": "https://song.link/i/1885296220",
+    "appleUrl": "https://music.apple.com/us/album/shadowed-by-tomorrow/1885296219?i=1885296220&uo=4",
+    "artwork": "images/artwork/1885296220.jpg"
+  },
+  {
+    "trackId": 1845242150,
+    "title": "Six",
+    "releaseDate": "2025-10-03",
+    "songLink": "https://song.link/i/1845242150",
+    "appleUrl": "https://music.apple.com/us/album/six/1845242149?i=1845242150&uo=4",
+    "artwork": "images/artwork/1845242150.jpg"
+  },
+  {
+    "trackId": 1814795386,
+    "title": "Pi(T)",
+    "releaseDate": "2025-06-06",
+    "songLink": "https://song.link/i/1814795386",
+    "appleUrl": "https://music.apple.com/us/album/pi-t/1814795378?i=1814795386&uo=4",
+    "artwork": "images/artwork/1814795386.jpg"
+  }
+]

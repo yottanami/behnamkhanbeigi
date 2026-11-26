@@ -1,100 +1,596 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Behnam Khanbeigi"/>
-  <title>Behnam Khanbeigi | بهنام خان‌بیگی</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behnam Khanbeigi | Composer &amp; Producer | Modern Classical &amp; Electronic</title>
+  <meta name="description" content="Behnam Khanbeigi is a composer and producer blending modern classical and electronic music. Stream the latest single “Bittersweet” on Spotify, Apple Music, YouTube, and all platforms." />
+  <meta name="keywords" content="Behnam Khanbeigi, بهنام خان‌بیگی, بهنام خان بیگی, بهنام خانبیگی, modern classical, new age, electronic music, composer, producer" />
+  <link rel="canonical" href="https://behnamkhanbeigi.com/" />
+  <meta name="theme-color" content="#0A0C12" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Behnam Khanbeigi" />
+  <meta property="og:title" content="Behnam Khanbeigi | Composer &amp; Producer" />
+  <meta property="og:description" content="Behnam Khanbeigi is a composer and producer blending modern classical and electronic music. Stream the latest single “Bittersweet” on Spotify, Apple Music, YouTube, and all platforms." />
+  <meta property="og:url" content="https://behnamkhanbeigi.com/" />
+  <meta property="og:image" content="https://behnamkhanbeigi.com/images/artwork/6769398385.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Behnam Khanbeigi | Composer &amp; Producer" />
+  <meta name="twitter:description" content="Behnam Khanbeigi is a composer and producer blending modern classical and electronic music. Stream the latest single “Bittersweet” on Spotify, Apple Music, YouTube, and all platforms." />
+  <meta name="twitter:image" content="https://behnamkhanbeigi.com/images/artwork/6769398385.jpg" />
+
+  <link rel="icon" href="images/behnam_khanbeigi.jpg" />
+
+  <!-- Set direction/language before first paint to avoid a layout flash. -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("bk-lang");
+        var lang = saved || ((navigator.language || "").slice(0, 2) === "fa" ? "fa" : "en");
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "fa" ? "rtl" : "ltr";
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- JSONLD:START -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "@id": "https://behnamkhanbeigi.com/#artist",
+  "name": "Behnam Khanbeigi",
+  "alternateName": [
+    "بهنام خان‌بیگی",
+    "بهنام خان بیگی",
+    "بهنام خانبیگی"
+  ],
+  "url": "https://behnamkhanbeigi.com/",
+  "image": "https://behnamkhanbeigi.com/images/behnam_khanbeigi.jpg",
+  "genre": [
+    "Modern Classical",
+    "New Age",
+    "Electronic",
+    "Classical Crossover"
+  ],
+  "sameAs": [
+    "https://open.spotify.com/artist/4h2cXpWD3zRDB2jwiL5jP6",
+    "https://music.apple.com/artist/behnam-khanbeigi/1814358514",
+    "https://www.deezer.com/artist/323615071",
+    "https://beeptunes.com/artist/646808594/%D8%A8%D9%87%D9%86%D8%A7%D9%85-%D8%AE%D8%A7%D9%86-%D8%A8%DB%8C%DA%AF%DB%8C",
+    "https://www.youtube.com/@behnam_khanbeigi",
+    "https://www.instagram.com/behnam_khanbeigi/",
+    "https://musicbrainz.org/artist/a9fa3d58-9e58-4102-a9a4-1400b079d3ca",
+    "https://www.wikidata.org/wiki/Q136653615"
+  ],
+  "track": [
+    {
+      "@type": "MusicRecording",
+      "name": "Bittersweet",
+      "datePublished": "2026-05-15",
+      "url": "https://song.link/i/6769398385",
+      "image": "https://behnamkhanbeigi.com/images/artwork/6769398385.jpg",
+      "byArtist": {
+        "@id": "https://behnamkhanbeigi.com/#artist"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Shadowed by Tomorrow",
+      "datePublished": "2026-03-20",
+      "url": "https://song.link/i/1885296220",
+      "image": "https://behnamkhanbeigi.com/images/artwork/1885296220.jpg",
+      "byArtist": {
+        "@id": "https://behnamkhanbeigi.com/#artist"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Six",
+      "datePublished": "2025-10-03",
+      "url": "https://song.link/i/1845242150",
+      "image": "https://behnamkhanbeigi.com/images/artwork/1845242150.jpg",
+      "byArtist": {
+        "@id": "https://behnamkhanbeigi.com/#artist"
+      }
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Pi(T)",
+      "datePublished": "2025-06-06",
+      "url": "https://song.link/i/1814795386",
+      "image": "https://behnamkhanbeigi.com/images/artwork/1814795386.jpg",
+      "byArtist": {
+        "@id": "https://behnamkhanbeigi.com/#artist"
+      }
+    }
+  ]
+}
+  </script>
+        <!-- JSONLD:END -->
+
   <style>
+    :root {
+      --bg: #0A0C12;
+      --surface: #11141D;
+      --surface-2: #171B27;
+      --text: #ECEAE3;
+      --muted: #878C96;
+      --gold: #C9A227;
+      --gold-bright: #E6C457;
+      --line: rgba(201, 162, 39, 0.16);
+      --line-soft: rgba(255, 255, 255, 0.06);
+      --radius: 16px;
+      --serif: Georgia, "Palatino Linotype", Palatino, "Times New Roman", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      --fa: "Vazirmatn", "IRANSansX", "IRANSans", "Segoe UI", Tahoma, "Noto Naskh Arabic", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(1100px 520px at 78% -12%, rgba(201, 162, 39, 0.10), transparent 60%),
+        radial-gradient(900px 620px at -12% 36%, rgba(38, 52, 94, 0.30), transparent 60%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--gold-bright); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- Header ---------- */
+    header.site-header {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      min-height: 100vh;
-      color: #111;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.5rem 0 1rem;
     }
 
-    h1 {
-      font-size: 2.5em;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+    h1.brand {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.05rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1.brand a { color: var(--text); }
+    h1.brand a:hover { color: var(--gold-bright); text-decoration: none; }
+
+    .lang-toggle {
+      font-family: inherit;
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      padding: 0.42rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      line-height: 1;
+    }
+    .lang-toggle:hover { border-color: var(--gold); color: var(--gold-bright); }
+
+    /* ---------- Latest (hero) ---------- */
+    .latest { padding: 1.5rem 0 4rem; }
+
+    .role {
+      color: var(--gold);
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin: 0 0 1.6rem;
     }
 
-    .profile-img {
-      width: 220px;
-      height: 220px;
+    .latest-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 430px) 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+      min-height: 56vh;
+      padding: clamp(1.5rem, 4vw, 2.6rem);
+      background: linear-gradient(180deg, var(--surface) 0%, rgba(17, 20, 29, 0.6) 100%);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--text);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+    }
+    .latest-hero:hover {
+      border-color: var(--gold);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+    }
+
+    .latest-art-wrap { position: relative; }
+    .latest-art {
+      width: 100%;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 12px;
-      margin-bottom: 1rem;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .latest-hero:hover .latest-art { transform: scale(1.015); }
+    .latest-art-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 16px -16px -16px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      pointer-events: none;
     }
 
-    .subtitle {
-      color: #666;
-      font-size: 1rem;
-      margin-bottom: 2rem;
+    .latest-info { display: flex; flex-direction: column; align-items: flex-start; }
+    .eyebrow {
+      color: var(--gold);
+      font-size: 0.78rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin: 0 0 0.9rem;
     }
-
-    .track-section {
-      margin-bottom: 2rem;
+    .latest-title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2.2rem, 5.2vw, 3.4rem);
+      line-height: 1.05;
+      margin: 0 0 0.5rem;
     }
+    .latest-date { color: var(--muted); margin: 0 0 1.9rem; }
 
-    .track-name {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    .listen-btn {
-      background-color: transparent;
-      color: #111;
-      border: 2px solid #111;
-      border-radius: 6px;
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .listen-btn:hover {
-      background-color: #111;
-      color: #fff;
-    }
-
-    .contact {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
-
-    footer {
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.82rem 1.6rem;
+      border-radius: 999px;
       font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 2rem;
+      letter-spacing: 0.03em;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-gold { background: var(--gold); color: #0A0C12; font-weight: 600; }
+    .latest-hero:hover .btn-gold { background: var(--gold-bright); }
+
+    /* ---------- More works (list) ---------- */
+    .more { margin-top: clamp(3rem, 7vw, 5rem); }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin: 0;
+      letter-spacing: 0.03em;
+    }
+    .section-head::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+    .works-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--line-soft);
+    }
+    .work { border-bottom: 1px solid var(--line-soft); }
+    .work-link {
+      display: grid;
+      grid-template-columns: 56px 1fr auto auto;
+      align-items: center;
+      gap: 1.1rem;
+      padding: 0.9rem 0.6rem;
+      color: var(--text);
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .work-link:hover { background: var(--surface); color: var(--gold-bright); text-decoration: none; }
+    .work-thumb {
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--line-soft);
+    }
+    .work-title { font-family: var(--serif); font-size: 1.2rem; }
+    .work-year { color: var(--muted); font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+    .work-cta { color: var(--gold); font-size: 1.05rem; opacity: 0.65; transition: opacity 0.2s ease; }
+    .work-link:hover .work-cta { opacity: 1; }
+
+    /* ---------- Listen / platforms ---------- */
+    section.block { padding: 3rem 0; }
+    .platforms { display: flex; gap: 0.9rem; flex-wrap: wrap; }
+    .platform {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+    .platform:hover {
+      border-color: var(--gold);
+      color: var(--gold-bright);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    /* ---------- Contact ---------- */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: clamp(2rem, 5vw, 3rem) 2rem;
+      text-align: center;
+    }
+    .contact-card p { margin: 0.3rem 0; }
+    .contact-email { font-size: 1.25rem; font-family: var(--serif); }
+    .contact-socials { margin-top: 1.3rem; display: flex; gap: 0.9rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ---------- Footer ---------- */
+    footer.site-footer {
+      border-top: 1px solid var(--line-soft);
+      margin-top: 2rem;
+      padding: 2rem 0 2.6rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    /* ---------- Farsi / RTL ---------- */
+    [dir="rtl"] body { font-family: var(--fa); }
+    [dir="rtl"] h1.brand,
+    [dir="rtl"] .role,
+    [dir="rtl"] .eyebrow,
+    [dir="rtl"] .section-title,
+    [dir="rtl"] .btn,
+    [dir="rtl"] .latest-date,
+    [dir="rtl"] .work-year,
+    [dir="rtl"] .platform,
+    [dir="rtl"] .lang-toggle,
+    [dir="rtl"] .contact-email,
+    [dir="rtl"] .site-footer { font-family: var(--fa); }
+    [dir="rtl"] h1.brand,
+    [dir="rtl"] .role,
+    [dir="rtl"] .eyebrow { letter-spacing: 0; }
+    [dir="rtl"] .latest-art-wrap::after { inset: 16px 16px -16px -16px; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 820px) {
+      .latest-hero {
+        grid-template-columns: 1fr;
+        min-height: 0;
+        gap: 2rem;
+      }
+      .latest-art-wrap { max-width: 360px; }
+      .work-link { grid-template-columns: 46px 1fr auto auto; gap: 0.9rem; }
+      .work-thumb { width: 46px; height: 46px; }
+      .work-title { font-size: 1.08rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; scroll-behavior: auto !important; }
     }
   </style>
 </head>
 <body>
 
-  <h1>BEHNAM KHANBEIGI</h1>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="brand"><a href="#top" data-i18n="name">Behnam Khanbeigi</a></h1>
+      <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch to Farsi">فارسی</button>
+    </header>
 
-  <img src="images/behnam_khanbeigi.jpg" alt="Behnam Khanbeigi" class="profile-img" />
+    <main>
+      <section class="latest" id="top" aria-label="Latest release">
+        <p class="role" data-i18n="role">Composer &amp; Producer</p>
 
-  <div class="track-section">
-    <div class="track-name">Latest Track: Pi(t)</div>
-    <a href="https://social.tunecore.com/linkShare?linkid=o2u_lo4IuvW63Gkjo3H42g" target="_blank" class="listen-btn">Listen Here</a>
+        <!-- LATEST:START -->
+        <a class="latest-hero" href="https://song.link/i/6769398385" target="_blank" rel="noopener" aria-label="Listen to Bittersweet">
+          <div class="latest-art-wrap">
+            <img class="latest-art" src="images/artwork/6769398385.jpg" alt="Cover art for Bittersweet" width="600" height="600" />
+          </div>
+          <div class="latest-info">
+            <p class="eyebrow" data-i18n="latestRelease">Latest Release</p>
+            <h2 class="latest-title">Bittersweet</h2>
+            <p class="latest-date"><span data-i18n="single">Single</span> &middot; <time datetime="2026-05-15" data-date="2026-05-15" data-date-mode="full">May 15, 2026</time></p>
+            <span class="btn btn-gold"><span aria-hidden="true">&#9654;</span>&nbsp;<span data-i18n="listenBtn">Listen everywhere</span></span>
+          </div>
+        </a>
+        <!-- LATEST:END -->
+
+        <div class="more">
+          <div class="section-head"><h2 class="section-title" data-i18n="moreWorks">More Works</h2></div>
+          <ul class="works-list">
+            <!-- RELEASES:START -->
+            <li class="work">
+              <a class="work-link" href="https://song.link/i/1885296220" target="_blank" rel="noopener" aria-label="Listen to Shadowed by Tomorrow">
+                <img class="work-thumb" src="images/artwork/1885296220.jpg" alt="" width="120" height="120" loading="lazy" />
+                <span class="work-title">Shadowed by Tomorrow</span>
+                <span class="work-year"><time datetime="2026-03-20" data-date="2026-03-20" data-date-mode="year">2026</time></span>
+                <span class="work-cta" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li class="work">
+              <a class="work-link" href="https://song.link/i/1845242150" target="_blank" rel="noopener" aria-label="Listen to Six">
+                <img class="work-thumb" src="images/artwork/1845242150.jpg" alt="" width="120" height="120" loading="lazy" />
+                <span class="work-title">Six</span>
+                <span class="work-year"><time datetime="2025-10-03" data-date="2025-10-03" data-date-mode="year">2025</time></span>
+                <span class="work-cta" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li class="work">
+              <a class="work-link" href="https://song.link/i/1814795386" target="_blank" rel="noopener" aria-label="Listen to Pi(T)">
+                <img class="work-thumb" src="images/artwork/1814795386.jpg" alt="" width="120" height="120" loading="lazy" />
+                <span class="work-title">Pi(T)</span>
+                <span class="work-year"><time datetime="2025-06-06" data-date="2025-06-06" data-date-mode="year">2025</time></span>
+                <span class="work-cta" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+        <!-- RELEASES:END -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="block" id="listen" aria-label="Listen on all platforms">
+        <div class="section-head"><h2 class="section-title" data-i18n="listenHeading">Listen Everywhere</h2></div>
+        <div class="platforms">
+          <a class="platform" href="https://open.spotify.com/artist/4h2cXpWD3zRDB2jwiL5jP6" target="_blank" rel="noopener">Spotify</a>
+          <a class="platform" href="https://music.apple.com/artist/behnam-khanbeigi/1814358514" target="_blank" rel="noopener">Apple Music</a>
+          <a class="platform" href="https://www.youtube.com/@behnam_khanbeigi" target="_blank" rel="noopener">YouTube</a>
+          <a class="platform" href="https://www.deezer.com/artist/323615071" target="_blank" rel="noopener">Deezer</a>
+          <a class="platform" href="https://beeptunes.com/artist/646808594/%D8%A8%D9%87%D9%86%D8%A7%D9%85-%D8%AE%D8%A7%D9%86-%D8%A8%DB%8C%DA%AF%DB%8C" target="_blank" rel="noopener">BeepTunes</a>
+        </div>
+      </section>
+
+      <section class="block" id="contact" aria-label="Contact">
+        <div class="section-head"><h2 class="section-title" data-i18n="contact">Contact</h2></div>
+        <div class="contact-card">
+          <p class="eyebrow" data-i18n="getInTouch">Get in touch</p>
+          <p class="contact-email" id="email-line"><noscript>contact [at] behnamkhanbeigi [dot] com</noscript></p>
+          <div class="contact-socials">
+            <a class="platform" href="https://www.instagram.com/behnam_khanbeigi/" target="_blank" rel="noopener">Instagram</a>
+            <a class="platform" href="https://www.youtube.com/@behnam_khanbeigi" target="_blank" rel="noopener">YouTube</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Behnam Khanbeigi &middot; behnamkhanbeigi.com</p>
+    </footer>
   </div>
-  <div class="contact">
-    <a href="https://www.instagram.com/behnam_khanbeigi/" target="_blank">@behnam_khanbeigi</a>
-  </div>
-  
-  <div class="contact">contact@behnamkhanbeigi.com</div>
 
-  <footer>behnamkhanbeigi.com</footer>
+  <script>
+    // Bilingual UI (English / Farsi). Static markup ships in English so
+    // crawlers and no-JS visitors get readable content; this swaps labels,
+    // direction and localized dates, and remembers the choice.
+    (function () {
+      var I18N = {
+        en: {
+          _dir: "ltr",
+          name: "Behnam Khanbeigi",
+          role: "Composer & Producer",
+          latestRelease: "Latest Release",
+          single: "Single",
+          listenBtn: "Listen everywhere",
+          moreWorks: "More Works",
+          listenHeading: "Listen Everywhere",
+          contact: "Contact",
+          getInTouch: "Get in touch",
+          toggle: "فارسی",
+          toggleLabel: "تغییر به فارسی"
+        },
+        fa: {
+          _dir: "rtl",
+          name: "بهنام خان‌بیگی",
+          role: "آهنگساز و پرودیوسر",
+          latestRelease: "جدیدترین اثر",
+          single: "تک‌آهنگ",
+          listenBtn: "پخش در همهٔ پلتفرم‌ها",
+          moreWorks: "آثار دیگر",
+          listenHeading: "در همه‌جا بشنوید",
+          contact: "تماس",
+          getInTouch: "در تماس باشید",
+          toggle: "EN",
+          toggleLabel: "Switch to English"
+        }
+      };
+
+      function fmtDate(iso, lang, mode) {
+        var p = iso.split("-");
+        var d = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+        var locale = lang === "fa" ? "fa-IR" : "en-US";
+        var opts = mode === "year"
+          ? { year: "numeric", timeZone: "UTC" }
+          : { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" };
+        try { return new Intl.DateTimeFormat(locale, opts).format(d); }
+        catch (e) { return mode === "year" ? p[0] : iso; }
+      }
+
+      var toggleBtn = document.getElementById("lang-toggle");
+
+      function apply(lang) {
+        if (!I18N[lang]) lang = "en";
+        var dict = I18N[lang];
+        document.documentElement.lang = lang;
+        document.documentElement.dir = dict._dir;
+
+        var nodes = document.querySelectorAll("[data-i18n]");
+        for (var i = 0; i < nodes.length; i++) {
+          var key = nodes[i].getAttribute("data-i18n");
+          if (dict[key] != null) nodes[i].textContent = dict[key];
+        }
+        var dates = document.querySelectorAll("[data-date]");
+        for (var j = 0; j < dates.length; j++) {
+          var el = dates[j];
+          el.textContent = fmtDate(el.getAttribute("data-date"), lang, el.getAttribute("data-date-mode") || "full");
+        }
+        if (toggleBtn) {
+          toggleBtn.textContent = dict.toggle;
+          toggleBtn.setAttribute("aria-label", dict.toggleLabel);
+        }
+        try { localStorage.setItem("bk-lang", lang); } catch (e) {}
+      }
+
+      function current() {
+        try {
+          var saved = localStorage.getItem("bk-lang");
+          if (saved) return saved;
+        } catch (e) {}
+        return (navigator.language || "").slice(0, 2) === "fa" ? "fa" : "en";
+      }
+
+      apply(current());
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function () {
+          apply(document.documentElement.lang === "fa" ? "en" : "fa");
+        });
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      // Address stored reversed so scrapers scanning the page source
+      // never see it in plain form; the mailto href is only attached
+      // on user interaction.
+      var r = "moc.igiebnahkmanheb@tcatnoc";
+      var e = r.split("").reverse().join("");
+      var a = document.createElement("a");
+      a.textContent = e;
+      a.setAttribute("href", "#");
+      function arm() { a.setAttribute("href", "mailto:" + e); }
+      a.addEventListener("mouseenter", arm);
+      a.addEventListener("touchstart", arm, { passive: true });
+      a.addEventListener("focus", arm);
+      document.getElementById("email-line").appendChild(a);
+    })();
+  </script>
 
 </body>
 </html>
